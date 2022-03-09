@@ -24,14 +24,14 @@
                     <div class="col-lg-2 col-md-3 no-padding col-sm-12 nav-img">
                         <!-- <img src="assets/images/slider/Logo.png" alt=""> -->
                         <ul class="check1">
-                        <h2><li class="check1"><a href="#">MediZone</a></li>
+                        <h2><li class="check1"><a href="{{ url_for('index') }}">MediZone</a></li>
                             </h2>
                             </ul>
                        <a data-toggle="collapse" data-target="#menu" href="#menu" ><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
                     </div>
                     <div id="menu" class="col-lg-8 col-md-9 d-none d-md-block nav-item">
                         <ul class="check">
-                            <h2><li><a href="#">Home</a></li>
+                            <h2><li><a href="{{ url_for('index') }}"">Home</a></li>
                             <li><a href="{{ url_for('map') }}">Map</a></li></h2>
                             <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
                             <li><a href="{{ url_for('contactus') }}">Contact Us</a></li></h2>
