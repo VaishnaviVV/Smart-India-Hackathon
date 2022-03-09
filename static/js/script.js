@@ -46,7 +46,7 @@ var map = L.map("mapcontainer", {"maxZoom": 18, "tap": false, "zoomControl": fal
 
 var gl = L.mapboxGL({
 	accessToken: mapboxToken,
-	style: "mapbox://styles/mapbox/streets-v11",
+	style: "mapbox://styles/chandlerbong/cl0gd4sj8005r14korbrmiuqm",
 	attribution: "&#169; <a href='https://www.mapbox.com/about/maps/' target='_blank'>Mapbox</a> &#169; <a href='https://www.openstreetmap.org/copyright' target='_blank'>OpenStreetMap</a> <a class='font-weight-bold' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>",
 }).addTo(map);
 

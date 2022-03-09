@@ -1,1 +1,1 @@
-var mapboxToken="pk.eyJ1IjoibmFyZW5kcmFnbyIsImEiOiJjbDBncXgwNDYwMDl6M2NsZXE5NmxuYWp0In0.WvNzRS_DMtUTVYakokXYNA";
+var mapboxToken="pk.eyJ1IjoiY2hhbmRsZXJib25nIiwiYSI6ImNsMGc3bmNqaDB6d3AzcGxmcXZ1cmlnamgifQ.kag0BOOgk4kM8bdaM4maZg";
