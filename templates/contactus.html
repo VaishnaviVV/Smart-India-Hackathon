@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/contactus.css') }}">
+
+	<meta name="viewport" contact="width=device-width,initial-scale=1.0">
+	<title>MediZone | Contact Us</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	</head>
+	<body>
+		<section class="contact">
+			<div class="content">
+				<h1>CONTACT US</h1>
+			</div>
+			<div class="container">
+				<div class="contactInfo">
+					<div class="box">
+					<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+					<div class="text">
+						<h3>Address</h3>
+						<p>Vellore Institute of Technology<br>Kelambakkam - Vandalur Road,<br>Rajan Nagar, Chennai, <br>Tamil Nadu 600127</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+					<div class="text">
+						<h3>Phone</h3>
+						<p>+91 98402 80874</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+					<div class="text">
+						<h3>Email</h3>
+						<p>medizonesih2022@gmail.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="contactForm">
+				<form >
+					<h2>Send Message</h2>
+					<div class="inputBox">
+						<input type="text" name="FullName" id="FullName"  required="required">
+						<span>Full Name</span>
+					</div>
+					<div class="inputBox">
+						<input type="text" name="email" id="email" required="required">
+						<span>Email</span>
+					</div>
+					<div class="inputBox">
+						<textarea name="msg" id="msg"  required="required"></textarea>
+						<span>Type your message...</span>
+					</div>
+					<div class="inputBox">
+						<input type="Submit" name="send" value="send" id="send" onclick="sendEmail()">
+					</div>
+				</form>
+		</div>
+	</div>
+		</section>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script type="text/javascript">
+      
+          function sendEmail() {
+            var FullName = document.getElementById("FullName").value;
+            var email = document.getElementById("email").value;
+            var msg = document.getElementById("msg").value;
+            Email.send({
+              Host: "smtp.gmail.com",
+              Username: "medizonesih2022@gmail.com",
+              Password: "medizone@321",
+              To: "medizonesih2022@gmail.com",
+              From: email,
+              Subject: "Contact Query",
+              Body: msg,
+            })
+              .then(function (message) {
+                alert("Mail sent successfully")
+              });
+          }
+        </script>
+	</body>
+	</html>

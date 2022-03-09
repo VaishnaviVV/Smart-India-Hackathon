@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MediZone | Home</title>
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/owl.theme.default.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/homestyle.css') }}"/>
+
+</head>
+
+    <body>
+
+    <!-- Header Starts Here--->
+    <header id="menu-jk">
+    
+        <div id="nav-head" class="header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 no-padding col-sm-12 nav-img">
+                        <!-- <img src="assets/images/slider/Logo.png" alt=""> -->
+                        <ul class="check1">
+                        <h2><li class="check1"><a href="#">MediZone</a></li>
+                            </h2>
+                            </ul>
+                       <a data-toggle="collapse" data-target="#menu" href="#menu" ><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
+                    </div>
+                    <div id="menu" class="col-lg-8 col-md-9 d-none d-md-block nav-item">
+                        <ul class="check">
+                            <h2><li><a href="#">Home</a></li>
+                            <li><a href="{{ url_for('map') }}">Map</a></li></h2>
+                            <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+                            <li><a href="{{ url_for('contactus') }}">Contact Us</a></li></h2>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 d-none d-lg-block appoint">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    
+    
+       <!--Slider Starts Here -->
+   <div  class="slider container-fluid">
+   		<ul id="slider">
+   			<li data-active="1" data-background="{{ url_for('static',filename='img/bg.jpg') }}">
+   				<div class="slider-layer">
+					<div class="container">
+						<h1 class="animated  fadeInRightBig ">Electronically detecting occupancy <br> of beds in Hospitals.</h1>
+						<p class="animated  fadeInLeftBig">The art of medicine consists of  <br>amusing the patient while nature cures the disease.</p>
+						<div class="animated fadeInUpBig buttn-row">
+                            <form action="{{ url_for('map') }}" method="POST">
+                                <input type="submit" class="btn btn-info" value="Go to Maps"/>
+                            </form>
+						</div>
+					</div>
+   				</div>
+   			
+   			</li>
+   			<li data-active="0" data-background="{{ url_for('static',filename='img/bg.jpg') }}">
+   				<div class="slider-layer">
+					<div class="container">
+						<h1 class="animated  slideInDown ">You are in the Right Place <br> at the Right Time</h1>
+						<p class="animated  zoomInLeft ">The best preparation for tomorrow is doing your best today.</p>
+						<div class="buttn-row animated  zoomInLeft">
+
+                            <form action="{{ url_for('map') }}" method="POST">
+                                <input type="submit" class="btn btn-info" value="Go to Maps"/>
+                            </form>
+							<!-- <div class="btn">Donate Now</div> -->
+						</div>
+					</div>
+   				</div>
+   			</li>
+   	
+   		</ul>
+   </div><!--########## Slider Ends Here ##########-->
+   
+    </body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='js/homescript.js') }}"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+</html>
